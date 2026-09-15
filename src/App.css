@@ -2730,36 +2730,36 @@
 }
 
 /* ==========================================================================
-   15. PROFESSIONAL CSS ANIMATIONS & EFFECTS
-   Zoom In, Left & Right Slide In, Ken Burns, Shimmer, Tilt & Hover Effects
+   15. PROFESSIONAL CSS ANIMATIONS & EFFECTS (MEDIUM SPEED & SMOOTH EASING)
+   Calibrated for elegant, natural, medium-tempo transitions
    ========================================================================== */
 
-/* --- A. Scroll Reveal System --- */
+/* --- A. Scroll Reveal System (Medium 1.25s duration, gentle cubic-bezier) --- */
 .reveal-left {
   opacity: 0;
-  transform: translateX(-50px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-40px);
+  transition: opacity 1.25s cubic-bezier(0.25, 1, 0.5, 1), transform 1.25s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: opacity, transform;
 }
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(50px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(40px);
+  transition: opacity 1.25s cubic-bezier(0.25, 1, 0.5, 1), transform 1.25s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: opacity, transform;
 }
 
 .reveal-zoom {
   opacity: 0;
-  transform: scale(0.88);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.92);
+  transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: opacity, transform;
 }
 
 .reveal-up {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(35px);
+  transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: opacity, transform;
 }
 
@@ -2780,78 +2780,78 @@
   transform: translateY(0);
 }
 
-/* Stagger Delays */
-.delay-1 { transition-delay: 0.15s; }
-.delay-2 { transition-delay: 0.3s; }
-.delay-3 { transition-delay: 0.45s; }
-.delay-4 { transition-delay: 0.6s; }
+/* Medium Stagger Delays */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }
 
-/* --- B. Hero Slider Animations --- */
+/* --- B. Hero Slider Animations (Relaxed, Medium Pace) --- */
 .ken-burns {
-  animation: kenBurnsZoom 8s cubic-bezier(0.25, 0.8, 0.25, 1) infinite alternate;
+  animation: kenBurnsZoom 14s cubic-bezier(0.25, 0.8, 0.25, 1) infinite alternate;
 }
 
 @keyframes kenBurnsZoom {
   0% { transform: scale(1); }
-  100% { transform: scale(1.12); }
+  100% { transform: scale(1.10); }
 }
 
 .hero-anim-left {
-  animation: heroSlideLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: heroSlideLeft 1.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes heroSlideLeft {
-  0% { opacity: 0; transform: translateX(-60px); }
+  0% { opacity: 0; transform: translateX(-45px); }
   100% { opacity: 1; transform: translateX(0); }
 }
 
 .hero-anim-zoom {
-  animation: heroZoomIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: heroZoomIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes heroZoomIn {
-  0% { opacity: 0; transform: scale(0.82) translateY(20px); }
+  0% { opacity: 0; transform: scale(0.88) translateY(15px); }
   100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 .hero-anim-right {
-  animation: heroSlideRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: heroSlideRight 1.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes heroSlideRight {
-  0% { opacity: 0; transform: translateX(60px); }
+  0% { opacity: 0; transform: translateX(45px); }
   100% { opacity: 1; transform: translateX(0); }
 }
 
 .hero-anim-up {
-  animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: heroSlideUp 1.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes heroSlideUp {
-  0% { opacity: 0; transform: translateY(35px); }
+  0% { opacity: 0; transform: translateY(28px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 /* --- C. Tab & Card Entrance Animations --- */
 .anim-zoom-in {
-  animation: tabZoomIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: tabZoomIn 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes tabZoomIn {
-  0% { opacity: 0; transform: scale(0.92); }
+  0% { opacity: 0; transform: scale(0.94); }
   100% { opacity: 1; transform: scale(1); }
 }
 
 .anim-slide-right {
-  animation: tabSlideRight 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: tabSlideRight 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes tabSlideRight {
-  0% { opacity: 0; transform: translateX(35px); }
+  0% { opacity: 0; transform: translateX(30px); }
   100% { opacity: 1; transform: translateX(0); }
 }
 
-/* --- D. Shimmer Light Sweep on Buttons --- */
+/* --- D. Shimmer Light Sweep on Buttons (Medium Pace) --- */
 .btn-shimmer {
   position: relative;
   overflow: hidden;
@@ -2867,7 +2867,7 @@
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0.40) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
@@ -2875,7 +2875,7 @@
 }
 
 .btn-shimmer:hover::before {
-  animation: buttonShine 0.75s ease-in-out;
+  animation: buttonShine 1.3s ease-in-out;
 }
 
 @keyframes buttonShine {
@@ -2884,27 +2884,27 @@
 }
 
 .btn-arrow {
-  transition: transform 0.25s ease;
+  transition: transform 0.35s ease;
 }
 
 .btn-yellow:hover .btn-arrow,
 .btn-dark-cta:hover .btn-arrow {
-  transform: translateX(4px);
+  transform: translateX(5px);
 }
 
-/* --- E. Image Hover Zoom & Shine --- */
+/* --- E. Image Hover Zoom & Shine (Smooth, Medium 1.1s Pace) --- */
 .img-zoom-wrapper {
   overflow: hidden;
 }
 
 .img-hover-zoom {
-  transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition: transform 1.1s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 
 .img-hover-zoom:hover,
 .project-card:hover .img-hover-zoom,
 .about-image-wrapper:hover .img-hover-zoom {
-  transform: scale(1.08) !important;
+  transform: scale(1.06) !important;
 }
 
 .shine-overlay {
@@ -2916,7 +2916,7 @@
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.22) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
@@ -2925,7 +2925,7 @@
 }
 
 .project-card:hover .shine-overlay {
-  animation: shinePass 0.85s ease-out;
+  animation: shinePass 1.3s ease-out;
 }
 
 @keyframes shinePass {
@@ -2933,31 +2933,31 @@
   100% { left: 200%; }
 }
 
-/* --- F. Card Tilt & Elevation --- */
+/* --- F. Card Tilt & Elevation (Gentle Elevation) --- */
 .card-tilt {
-  transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .card-tilt:hover {
-  transform: translateY(-8px) scale(1.015);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
 }
 
 .card-zoom-effect {
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease;
 }
 
 .card-zoom-effect:hover {
-  transform: translateY(-5px) scale(1.02);
+  transform: translateY(-4px) scale(1.015);
 }
 
-/* --- G. Floating Badges Animation --- */
+/* --- G. Floating Badges Animation (Calm, 6.5s Cycle) --- */
 .float-slow {
-  animation: floatSlowAnim 4.5s ease-in-out infinite;
+  animation: floatSlowAnim 6.5s ease-in-out infinite;
 }
 
 .float-delay {
-  animation-delay: 2.2s;
+  animation-delay: 3.2s;
 }
 
 @keyframes floatSlowAnim {
@@ -2965,13 +2965,13 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 }
 
-/* --- H. Pulse & Glow Effects --- */
+/* --- H. Pulse & Glow Effects (Gentle 3.5s Cycle) --- */
 .pulse-icon {
-  animation: pulseIconAnim 2.5s infinite;
+  animation: pulseIconAnim 3.5s infinite ease-in-out;
 }
 
 @keyframes pulseIconAnim {
@@ -2979,12 +2979,12 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.10);
   }
 }
 
 .pulse-subtle {
-  animation: pulseSubtleAnim 2s infinite ease-in-out;
+  animation: pulseSubtleAnim 3s infinite ease-in-out;
 }
 
 @keyframes pulseSubtleAnim {
@@ -2992,14 +2992,14 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.85;
+    opacity: 0.88;
   }
 }
 
 .glow-dot {
   display: inline-block;
   color: var(--primary-yellow);
-  text-shadow: 0 0 10px rgba(245, 166, 35, 0.8);
+  text-shadow: 0 0 8px rgba(245, 166, 35, 0.7);
 }
 
 .text-gradient-yellow {
@@ -3014,28 +3014,28 @@
   width: 24px;
   height: 3px;
   background-color: var(--primary-yellow);
-  transition: width 0.4s ease;
+  transition: width 0.6s ease;
 }
 
 .section-kicker:hover .animated-line {
-  width: 44px;
+  width: 42px;
 }
 
-/* --- J. Micro-Interactions --- */
+/* --- J. Micro-Interactions (Medium 0.4s Smooth Easing) --- */
 .hover-shift {
-  transition: transform 0.25s ease, color 0.25s ease;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), color 0.4s ease;
 }
 
 .hover-shift:hover {
-  transform: translateX(6px);
+  transform: translateX(5px);
 }
 
 .hover-lift {
-  transition: transform 0.25s ease;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .hover-lift:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .hover-underline {
@@ -3050,7 +3050,7 @@
   width: 0;
   height: 2px;
   background-color: var(--primary-yellow);
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
 }
 
 .hover-underline:hover::after {
@@ -3058,7 +3058,7 @@
 }
 
 .tool-hover-lift {
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.35s ease, background-color 0.35s ease, color 0.35s ease;
 }
 
 .tool-hover-lift:hover {
@@ -3069,7 +3069,7 @@
 }
 
 .hover-color-yellow {
-  transition: color 0.2s ease;
+  transition: color 0.35s ease;
 }
 
 .hover-color-yellow:hover {
@@ -3077,21 +3077,22 @@
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 15px rgba(245, 166, 35, 0.3);
+  box-shadow: 0 0 14px rgba(245, 166, 35, 0.25);
 }
 
-/* --- K. Modal Zoom In --- */
+/* --- K. Modal Zoom In (Smooth 0.5s Entrance) --- */
 .modal-zoom-in {
-  animation: modalZoomEntrance 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: modalZoomEntrance 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes modalZoomEntrance {
   0% {
     opacity: 0;
-    transform: scale(0.85);
+    transform: scale(0.90);
   }
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
+

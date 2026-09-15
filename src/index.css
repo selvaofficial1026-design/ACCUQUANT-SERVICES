@@ -27,7 +27,7 @@
   --font-display: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
   
-  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1);
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
   --shadow-md: 0 8px 24px rgba(0,0,0,0.1);
   --shadow-lg: 0 16px 36px rgba(0,0,0,0.15);
